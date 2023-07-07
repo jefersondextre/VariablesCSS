@@ -1,0 +1,28 @@
+/* Variables CSS (Custom Properties) 
+  - herencia
+  - cascada
+
+  Espacio en memoria que almacena un valor
+  ese valor puede ser recuperado.
+
+  Una variable puede ser global o scope de bloque
+  Global: Debe ser declarado en el elemento mas alto de DOM como  "HTML"
+*/
+:root{
+  --color:purple;
+  --link-color: orange;
+  --bg-color:var(green);
+}
+
+html{
+  background: var(--link-color);
+}
+
+a{
+  color: var(--link-color);
+}
+
+
+p{
+  color: var(--color);
+}
